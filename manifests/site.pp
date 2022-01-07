@@ -3,8 +3,8 @@ node default{
     ensure  => file,
     content => 'This is a readme',
     owner   => 'root',
-   }
-   file {'/root/README'
+   },
+  file {'/root/README':
     owner => 'root',
    }
 }
